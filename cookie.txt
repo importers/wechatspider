@@ -1,1 +1,27 @@
-35FFECAB1E1836D1B1F7196B1E436930
+'pgv_pvid':'2115985090', 
+'pgv_info':'ssid':'s2237470552', 
+'ptisp':'ctc', 
+'ptcz':'c891330bc26d9c0114441e63672a1ce1a4bcc0d8a47c65727285faa7277bea66', 
+'cache_hit_test_600':'1', 
+'cache_hit_test_3600':'1', 
+'cache_hit_test_31536000':'1', 
+'pt2gguin':'o1229323202', 
+'uin':'o1229323202', 
+'skey':'@OxwTyeJ64', 
+'p_uin':'o1229323202', 
+'p_skey':'2rUX5zszkW*YNiY8Mj42VH1WnE47iPY-o-I5sV6dpeo_', 
+'pt4_token':'L8WJS5GVWeZfNtT2JkHzDAmsWKMyssFAUedonoqSAd8_', 
+'g_ut':'3', 
+'network_type':'3'
+--------
+'ptisp':'ctc', 
+	'ptcz':'c891330bc26d9c0114441e63672a1ce1a4bcc0d8a47c65727285faa7277bea66', #固定值
+	'pt2gguin':'o1229323202', #固定值
+	'uin':'o1229323202', 
+	'skey':'@ho1eufRw3', 
+	'p_uin':'o1229323202', 
+	'p_skey':'80w8gQEZCjM4oreuAhRUmglvj9vvlQZU41roH2Upbb4_', 
+	'pt4_token':'W4GZ0fLn8CCG9ULY759vwdYoFWAovPclrpTTPVE2bW8_', 
+	'pgv_pvid':'2115985090', 
+	'pgv_info':'s4482467556',
+	'ssid':'s4482467556'}
