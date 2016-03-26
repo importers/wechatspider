@@ -4,7 +4,7 @@ import json,requests
 import sys
 
 #获取QQ空间内容
-def getcontent():
+def getcontent(res_attach):
 	cookies={'pgv_pvid':'2115985090', 
 	'pgv_info':'s2237470552',
 	'ssid':'s2237470552', 
@@ -22,8 +22,8 @@ def getcontent():
 	'g_ut':'3', 
 	'network_type':'3'}
 
-	payload = {'g_tk':'390100575','res_type':0,
-		'res_attach':'att=back%5Fserver%5Finfo%3Dbasetime%253D1458093793%2526pagenum%253D3%2526dayvalue%253D0%2526getadvlast%253D0%2526hasgetadv%253D%2526lastentertime%253D1458122976%2526LastAdvPos%253D0%26lastrefreshtime%3D1458137435%26lastseparatortime%3D0%26loadcount%3D1&tl=1458093793',
+	payload = {'g_tk':'391867508','res_type':0,
+		'res_attach':res_attach,
 		'refresh_type':2,
 		'format':'json'}
 	headers = {'Host':'m.qzone.com',
@@ -33,17 +33,19 @@ def getcontent():
 	r = requests.get("http://m.qzone.com/get_feeds",params=payload,cookies=cookies)
 	return r.text
 print u'--------解析---------'
-print r.url
 #print string
 # def analyze(strings):
 # 	xx=json.loads(strings.encode('utf8'))
 # 	return xx['data']['attachinfo']
 # #analyze(string)
-xx=json.loads(string.encode('utf8'))
+res_attach=sys.argv[1]
+string=getcontent(res_attach)
+xx=json.loads(string.decode('gbk').encode('utf8'))
+print string,xx['message']
 # #注意此处的为下一页的 res_attach 
-print xx['data']['attachinfo'] 
-while len(attachinfo)>=1: 
-	string = getcontent(attachinfo.pop())
+#print xx['data']['attachinfo'] 
+# while len(attachinfo)>=1: 
+# 	string = getcontent(attachinfo.pop())
 # def analyze(string):
 # 	#解析json数据
 # 	# path=sys.argv[1]
